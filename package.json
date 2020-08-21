@@ -4,7 +4,10 @@
   "description": "A spotify user data tracker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/aaronli39/spotitracks/issues"
   },
-  "homepage": "https://github.com/aaronli39/spotitracks#readme"
+  "homepage": "https://github.com/aaronli39/spotitracks#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
 }
