@@ -15,9 +15,6 @@ const useStyles = makeStyles((theme) => ({
 		width: "95px",
 		height: "100%",
 		overflow: "hidden",
-		// display: "flex",
-		// flexDirection: "column",
-		// justifyContent: "center",
 		position: "relative",
 		background: bgDarkest,
 		paddingBottom: theme.spacing(4),
@@ -33,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 		}
 	},
 	options: {
-		// flex: "1",
 		position: "absolute",
 		transform: "translate(0, -50%)",
 		top: "50%",
